@@ -1,0 +1,274 @@
+/*css file for rsvp page*/
+
+/*see also bootstrap for classes container and logo*/
+
+/*basic elements css*/
+
+html {
+  display: block;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  font-size: 14px;
+}
+
+.main-border {
+  border-top-color: #f89184;
+  width: 100%;
+  margin: 0;
+  border-top-width: 2px;
+}
+
+/*nav bar styles*/
+.header-bar {
+  background-color: #b0e0e6;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 10px;
+  justify-content: center;
+  text-align: left;
+  display: inline-block;
+  vertical-align: bottom;
+  /*  position: sticky;
+  top: 0; */
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+.wedding-logo {
+  display: inline-block;
+  float: left;
+  height: 90px;
+  padding-left: 30px;
+  vertical-align: middle;
+}
+
+.nav-wrapper {
+  display: inline-block;
+}
+
+.nav-list a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0 20px;
+  position: relative;
+  top: 50%;
+}
+
+.nav-list a:hover {
+  color: #82d58b;
+}
+
+.nav-list a.active {
+  text-decoration: underline;
+}
+
+.nav-list {
+  display: inline-block;
+  margin: 18px 0;
+}
+
+ul.nav-list-elements li {
+  display: inline-block;
+  padding-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-strapline {
+  text-align: right;
+  font-size: 20px;
+  padding-right: 50px;
+  margin: 18px 0;
+  float: right;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.nav-strapline p {
+  margin: 8px 0;
+}
+
+/*nav bar styles end*/
+
+/*main content rsvp starts*/
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #f89184;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #f89184;
+}
+
+hr {
+  margin: 10px;
+  border-top-color: #b0e0e6;
+  border-top-width: 2px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*part 1 - form element*/
+
+.about-the-rsvp-element {
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px 20px;
+}
+
+#googleform {
+  text-align: center;
+}
+
+/*part 2 - cake element*/
+
+.about-copy {
+  text-align: center;
+  float: none;
+  display: block;
+  word-wrap: break-word;
+}
+
+.cakepic {
+  height: 300px;
+  width: 200px;
+}
+
+.containcake {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.containcake:hover .overlay {
+  opacity: 1;
+}
+
+/*main content rsvp ends*/
+
+/*footer bar styles*/
+.footer-bar {
+  background-color: #b0e0e6;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 10px;
+  justify-content: center;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  bottom: 0;
+}
+
+.footer-list a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  top: 50%;
+}
+
+.footer-list a.active {
+  text-decoration: underline;
+}
+
+.footer-list a:hover {
+  color: #82d58b;
+}
+
+.footer-list {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+ul.footer-list-elements li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 25px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+.footer-strapline {
+  text-align: right;
+  font-size: 20px;
+  padding-right: 50px;
+  padding-top: 30px;
+  float: right;
+  display: inline-block;
+}
+
+.social-buttons img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+/*footer bar styles end*/
+
+/*media styles*/
+
+@media screen and (max-width: 755px) {
+  .wedding-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .nav-strapline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .nav-wrapper {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .footer-strapline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .footer-list-elements {
+    text-align: center;
+    display: block;
+    overflow: hidden;
+  }
+}
